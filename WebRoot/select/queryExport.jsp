@@ -189,6 +189,6 @@
 	<script src="js/bootstrap-table.min.js"></script>
 	<script src="js/bootstrap-table-zh-CN.min.js"></script>
 	<script src="js/WdatePicker.js"></script>
-	<script src="js/src/queryExport.js"></script>
+	<script src="js/src/queryExport.js?version=1.0"></script>
 </body>
 </html>

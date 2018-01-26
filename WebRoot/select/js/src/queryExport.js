@@ -184,7 +184,7 @@ $(function() {
 						alert(data);
 						return;
 					} else {
-						location.href = "/SearchServer/xlsx/" + data;
+						location.href = "/xlsx/" + data;
 						//location.href = 'http://tp.feicuiedu.com:8081/WebRoot/xlsx/' + data;
 					}
 				},

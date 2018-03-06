@@ -14,6 +14,12 @@
 <link href="css/font-awesome.css" rel="stylesheet" />
 </head>
 <body>
+	<%
+		HttpSession s = request.getSession();
+		String username = (String) s.getAttribute("username");
+		String password = (String) s.getAttribute("password");
+		if (username != null && password != null && ("admin".equals(username) || "jxgl".equals(username))) {
+	%>
 	<div id="wrapper">
 		<nav class="navbar  navbar-cls-top " role="navigation"
 			style="margin-bottom: 0">
@@ -96,6 +102,12 @@
 	<script src="js/tableExport.min.js"></script>
 	<script src="js/bootstrap-table-export.min.js"></script>
 	<script src="js/src/abnormal.js"></script>
+	
+	<%
+		} else {
+			response.sendRedirect("../Login.html");
+		}
+	%>
 	
 	
 </body>
